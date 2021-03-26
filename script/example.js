@@ -74,6 +74,7 @@ process.stdin.on("end", function () {
   processData(_input);
 });
 
+// Practice Problems - usual set up of STDIN and STDOUT
 // ===============================
 process.stdin.resume();
 process.stdin.setEncoding("utf-8"); // sometimes "ascii" is used
@@ -100,14 +101,12 @@ const readLine = () => {
 const main = () => {
   const writeStream = fs.createWriteStream(process.env.OUTPUT_PATH);
 
-  const n = parseInt(readLine().trim(), 10);
   // Arrays can be created using a constructor with a single number parameter. An array with its length property set to that number and the array elements are empty slots.
   // let fruits = new Array(2);
   // console.log(fruits.length); // 2
   // console.log(fruits[0]);     // undefined
 
-  let arr = Array(n);
-
+  // ==================================================
   // diagonalDifference =========================
   // creates two dimensional array
 
@@ -212,6 +211,62 @@ const main = () => {
   // const result = countingValleys(steps, path);
 
   // ws.write(result + '\n');
+  // ==================================================
+
+  // repeatedString =========================
+  // creates one dimensional array [a,b]
+
+  // const s = readLine();
+
+  // const n = parseInt(readLine(), 10);
+
+  // let result = repeatedString(s, n);
+
+  // ws.write(result + "\n");
+  // ==================================================
+
+  // reverseArray =========================
+  // creates one dimensional array [a,b]
+
+  // const arrCount = parseInt(readLine(), 10);
+
+  // const arr = readLine().split(' ').map(arrTemp => parseInt(arrTemp, 10));
+
+  // const res = reverseArray(arr);
+
+  // ws.write(res.join(' ') + '\n');
+  // ==================================================
+
+  // hourGlassSum =========================
+  // creates one dimensional array [a,b]
+
+  // let arr = Array(6);
+
+  // for (let i = 0; i < 6; i++) {
+  //  arr[i] = readLine().split(' ').map(arrTemp => parseInt(arrTemp, 10));
+  // }
+
+  // let result = hourglassSum(arr);
+
+  // ws.write(result + "\n");
+  // ==================================================
+
+  // dynamicArray =========================
+  // const firstMultipleInput = readLine().replace(/\s+$/g, '').split(' ');
+
+  // const n = parseInt(firstMultipleInput[0], 10);
+
+  // const q = parseInt(firstMultipleInput[1], 10);
+
+  // let queries = Array(q);
+
+  // for (let i = 0; i < q; i++) {
+  //   queries[i] = readLine().replace(/\s+$/g, '').split(' ').map(queriesTemp => parseInt(queriesTemp, 10));
+  // }
+
+  // const result = dynamicArray(n, queries);
+
+  // ws.write(result.join('\n') + '\n');
   // ==================================================
 
   // set a result variable to what's returned from the function to solve the algorithm. pass in arguments created above (i.e. arr, a, b, etc.)
