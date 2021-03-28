@@ -152,7 +152,7 @@ console.log(arrayManipulation(n3, queries3), "expected 31");
 //     for (let i = 0; i < m; i++) {
 //         queries[i] = readLine().split(' ').map(queriesTemp => parseInt(queriesTemp, 10));
 //     }
-//     let result = arrayManipulation(n, quries);
+//     let result = arrayManipulation(n, queries);
 //     ws.write(result + "\n")
 //     ws.end()
 //
