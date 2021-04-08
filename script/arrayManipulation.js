@@ -96,13 +96,13 @@ function arrayManipulation(n, queries) {
     if (b < n) {
       arr[b] -= k;
     }
-    console.log(arr, "arr while loop");
-    a++;
+    // console.log(arr, "arr while loop");
+    // a++;
   });
   for (let i = 1; i < n; i++) {
     arr[i] += arr[i - 1];
   }
-  console.log(arr, "arr after for loop");
+  // console.log(arr, "arr after for loop");
   let max = -Infinity;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] >= max) {
@@ -134,8 +134,8 @@ let queries3 = [
   [5, 9, 15],
 ];
 
-// console.log(arrayManipulation(n1, queries1), "expected 200");
-// console.log(arrayManipulation(n2, queries2), "expected 10");
+console.log(arrayManipulation(n1, queries1), "expected 200");
+console.log(arrayManipulation(n2, queries2), "expected 10");
 console.log(arrayManipulation(n3, queries3), "expected 31");
 
 // function main() {
