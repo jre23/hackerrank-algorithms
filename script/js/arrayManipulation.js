@@ -92,9 +92,9 @@ function arrayManipulation(n, queries) {
   // create array of zeros with length n
   let arr = new Array(n).fill(0);
   queries.forEach(([a, b, k], index) => {
-    arr[a - 1] += k;
+    arr[a - 1] += k; // entry point
     if (b < n) {
-      arr[b] -= k;
+      arr[b] -= k; // exit point
     }
     // console.log(arr, "arr while loop");
     // a++;

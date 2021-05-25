@@ -104,11 +104,13 @@ function checkMagazine(magazine, note) {
   let contains = "Yes";
   for (let i = 0; i < note.length; i++) {
     if (!magazineMap.has(note[i])) {
-      contains = "No";
+      // contains = "No";
+      return "No";
     } else {
       count = magazineMap.get(note[i]);
       if (count === 0) {
-        contains = "No";
+        // contains = "No";
+        return "No";
       } else {
         count--;
         magazineMap.set(note[i], count);
@@ -125,7 +127,7 @@ let note1 = "two times two is four";
 let magazine2 = ["two", "times", "three", "is", "not", " four"];
 let note2 = ["two", "times", "two", "is", "four"];
 
-// console.log(checkMagazine(magazine1, note1), "expected No");
+console.log(checkMagazine(magazine1, note1), "expected No");
 console.log(checkMagazine(magazine2, note2), "expected No");
 
 // function main() {
