@@ -83,7 +83,6 @@ class BinarySearchTree:
 #         self.right = None
 # """
 
-dict = {}
 def checkBST(root):
   if root is None:
     return True
