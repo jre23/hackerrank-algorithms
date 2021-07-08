@@ -73,7 +73,7 @@ import sys
 def staircase(n):
     # Write your code here
     if n == 0:
-        return;
+        return
     elif n == 1:
         print('#')
     else:
